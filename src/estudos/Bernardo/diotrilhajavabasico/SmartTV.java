@@ -1,4 +1,4 @@
-package estudos.Bernardo.diotrilhajavabasico;
+package estudos.bernardo.diotrilhajavabasico;
 
 import java.util.Scanner;
 
@@ -15,15 +15,19 @@ public class SmartTV {
 	}
 	public void aumentarVolume() {
 		volume++;
+		System.out.println("Volume Atual: " + volume + "\n");
 	}
 	public void diminuirVolume() {
 		volume--;
+		System.out.println("Volume Atual: " + volume + "\n");
 	}
 	public void descerCanal() {
 		canal--;
+		System.out.println("Canal Atual: " + canal + "\n");
 	}
 	public void subirCanal() {
 		canal++;
+		System.out.println("Canal Atual: " + canal + "\n");
 	}
 	public void mudarCanal() {
 		 if (!ligada) {
@@ -40,10 +44,10 @@ public class SmartTV {
 			
 			if (novoCanal >= 1 && novoCanal <= 99) {
 				this.canal = novoCanal;
-				System.out.println("Canal alterado para: " + canal);
+				System.out.println("Canal alterado para: " + canal + "\n");
 				canalPossivel = true;
 			}else {
-				System.out.println("Canal inválido, tente novamente.");
+				System.out.println("Canal inválido, tente novamente.\n\n" );
 			}
 		}
 	}
